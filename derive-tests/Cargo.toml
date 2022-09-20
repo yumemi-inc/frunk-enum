@@ -8,5 +8,14 @@ publish = false
 [dependencies]
 frunk-enum-derive = { path = "../derive" }
 frunk-enum-core = { path = "../core" }
-frunk = "0.4.0"
-frunk_core = "0.4.0"
+
+frunk_0_4 = { package = "frunk", version = "0.4.0", optional = true }
+frunk_core_0_4 = { package = "frunk_core", version = "0.4.0", optional = true }
+
+frunk_0_3 = { package = "frunk", version = "0.3.2", optional = true }
+frunk_core_0_3 = { package = "frunk_core", version = "0.3.2", optional = true }
+
+[features]
+0_4 = ["frunk_0_4", "frunk_core_0_4"]
+0_3 = ["frunk_0_3", "frunk_core_0_3"]
+default = ["0_4"]
