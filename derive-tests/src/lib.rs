@@ -1,18 +1,14 @@
-mod frunk {
-    #[cfg(feature = "0_4")]
-    pub(crate) use frunk_0_4::*;
+#[cfg(feature = "0_4")]
+use frunk_0_4 as frunk;
 
-    #[cfg(feature = "0_3")]
-    pub(crate) use frunk_0_3::*;
-}
+#[cfg(feature = "0_3")]
+use frunk_0_3 as frunk;
 
-mod frunk_core {
-    #[cfg(feature = "0_4")]
-    pub(crate) use frunk_core_0_4::*;
+#[cfg(feature = "0_4")]
+use frunk_core_0_4 as frunk_core;
 
-    #[cfg(feature = "0_3")]
-    pub(crate) use frunk_core_0_3::*;
-}
+#[cfg(feature = "0_3")]
+use frunk_core_0_3 as frunk_core;
 
 #[derive(Debug, PartialEq, Eq, frunk_enum_derive::LabelledGenericEnum)]
 enum Colour<T> where T: std::fmt::Display {
