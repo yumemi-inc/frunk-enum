@@ -1,5 +1,9 @@
 # Frunk Enum Support
 
+> **Warning**  
+> This fork was for supporting frunk v0.4 and won't be maintained anymore.
+> See https://github.com/Metaswitch/frunk-enum/pull/31 .
+
 [![Crates.io - frunk-enum](https://img.shields.io/crates/v/frunk-enum-core.svg)](https://crates.io/crates/frunk-enum-core) [![Build Status](https://travis-ci.org/Metaswitch/frunk-enum.svg?branch=master)](https://travis-ci.org/Metaswitch/frunk-enum) [![License: MIT/APACHE-2.0](https://img.shields.io/badge/License-MIT%2FAPACHE--2.0-green.svg)](https://opensource.org/licenses/MIT)
 
 ## Usage
